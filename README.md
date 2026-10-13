@@ -9,3 +9,11 @@ to an NFC tag; scanning the tag on any phone opens the card image in the browser
 
 File names are `{suit}{rank}_{style}.png` where suit is `c`, `d`, `h`, or `s`,
 rank is 1 (Ace) through 13 (King), and style is the face style (1 or 2).
+
+
+## Reveal page
+
+`r.html` is the page the app actually writes to NFC tags, e.g.
+`https://bkolin.github.io/magicard-cards/r.html#h13_1`. It shows the card centered on a solid
+black background so the card's transparent rounded corners render on black regardless of the
+spectator phone's browser theme. The fragment after `#` is the same `{suit}{rank}_{style}` id.
